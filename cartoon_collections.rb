@@ -24,12 +24,5 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  i = 0
-    while i < valid_calls.length do
-      if planeteer_calls.find {|elements| elements == valid_calls[i]}
-        return #{elements}
-      end
-      i += 1
-    end
-  return nil
+  if (planeteer_calls && valid_calls)
 end
